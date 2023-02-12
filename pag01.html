@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Hargs</title>
+    <style>
+        html {
+            color: #f1faee;
+            background-color: #4c51c6;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',  sans-serif;
+            position: inherit;
+            text-align: center;
+        }
+        h1 {
+            font-size: 7vh;
+            margin-top: 40px;
+        }
+        h2 {
+            font-size: 4vh;
+        }
+        #conteiner {
+            display: block;
+            position: inherit;
+            background-color: #4044a7;
+            border-radius: 3vh;
+            min-height: 90vh;
+            width: 100%;
+            justify-content: center;
+        }
+        #fake-input {
+            position: absolute;
+            padding: 5px;
+            width: 150px;
+            min-height: 32px;
+            background-color: #272964;
+            border-radius: 3%;
+        }
+        input {
+            position: relative;
+            opacity: 0%;
+            width: 150px;
+            min-height: 32px;
+        }
+        #content {
+            display: inline-block;
+            text-align: center;
+            min-height: 30px;
+            position: relative; 
+        }
+        button {
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 60px;
+            height: 42px;
+            margin-left: 4px;
+            margin-bottom: 17vh;
+            font-size: 70%;
+            background-color: #e63946;
+            color: rgb(255, 210, 255);
+            border-radius: 6%;
+            border-style: none;
+        }
+        button:hover {
+            background-color: #c22c38;
+        }
+    </style>
+    <script>
+        var text = "felipinho hacker namorado lindao demai da conta";
+        var textIndex = 0;
+        function textAdd(e) {
+            var fakeInput = document.getElementById("fake-input");
+            fakeInput.innerHTML = "";
+            textIndex = 0;
+
+            var input = e.target;
+
+            var inputValue = input.value;
+
+            for(var i=0; i < inputValue.length; i++){
+                if (textIndex < text.length) {
+                  fakeInput.innerHTML += text[textIndex];
+                  textIndex++;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="space" style="color: #4044a7; height: 1px">
+            ,
+        </div>
+        <div id="texts" style="margin-top: 17vh;">
+            <h1>JULIA NARGS??? A PRÓPRIA??</h1>
+            <h2>Entra com o nome do teu namorado aí entao:</h2>
+        </div>
+        <div id="content">
+            <div id="fake-input"></div>
+            <input type="text" oninput="textAdd(event)" maxlength="47"/>
+            <a href="pag02.html"><button>Enter</button></a>
+        </div>
+    </div>
+</body>
+</html>

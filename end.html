@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Hargs</title>
+    <style>
+        html {
+            color: #f1faee;
+            background-color: #4c51c6;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',  sans-serif;
+            position: inherit;
+            text-align: center;
+        }
+        h1 {
+            font-size: 9vh;
+        }
+        h2 {
+            font-size: 4vh;
+        }
+        #conteiner {
+            display: block;
+            position: inherit;
+            background-color: #4044a7;
+            border-radius: 3vh;
+            min-height: 90vh;
+            width: 100%;
+            justify-content: center;
+        }
+        #content {
+            display: inline-block;
+            text-align: center;
+            min-height: 30px;
+            position: relative; 
+        }
+        button {
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            min-width: 60px;
+            height: 42px;
+            margin-left: 4px;
+            margin-bottom: 2vh;
+            font-size: 70%;
+            background-color: #e63946;
+            color: rgb(255, 210, 255);
+            border-radius: 6%;
+            border-style: none;
+        }
+        button:hover {
+            background-color: #c22c38;
+        }
+        #texto {
+            display: inline-block;
+            background-color: #30327e;
+            border-radius: 4%;
+            margin-left: 21%;
+            margin-right: 21%;
+            margin-bottom: 1.7vh;
+        }
+        #question {
+            font-size: 4vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        #choices {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function alerta() {
+            console.log("ela nao aceitou")
+            alert("ata.");
+        }
+    </script>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="title" style="display: inline-block">
+            <h1>Acertou 10 mozao!!!!!</h1><img src="https://media.tenor.com/0mHUtRFCt5MAAAAC/confetti-confete.gif" style="width: 9vh; height: 9vh; margin-bottom: 10px;" alt="gif emoji comemorando">
+        </div>
+        <div id="texto">
+            <p style="margin-left: 1.7vh; margin-right: 1.7vh; text-align: justify; font-size: 2.9vh; line-height: 3.8vh; margin-bottom: 12vh;">júlia (nargs) maria pereira argate, eu te amo MUITO. nao tenho palavras para descrever a sorte que é ter voce como amiga, companheira, namorada, esposa, a minha pessoa. com voce, meus dias sao mais claros, minhas preocupações bobas nao tem tanta força, minha autoestima aumenta, sou mais feliz. eu falo que vou melhorar, que vou ser o cara perfeito pra voce, mas pensando bem nem o perfeito chega perto do que voce merece, mas prometo cuidar de voce, te dar todo o carinho, atenção, amor e cuidado todos os dias da sua vida. o que nós temos é pra sempre. nosso futuro está traçado desde o dia que a gente se conheceu, percebi isso quando a gente se aproximou, amigamos, nos casamos, com os flertes, quando percebi que voce é o amor da minha vida, O Dia (já faz 1 ano!!!!), agradeço por cada momento, e tenho certeza que sao só os primeiros passos do maior casal do mundo. eu prometi onze perguntas nesse quiz, até agora foram dez. porque? vou explicar. olhando pra trás e vendo todo esse caminho que nós percorremos, percebi que nunca te pedi oficialmente em namoro, e assim como os pedidos de casamento que te faço, posso fazer isso quantas vezes for necessário, por que cada dia sabendo que VOCE é a minha namorada é um dia feliz. então, a última pergunta:</p>
+            <div id="question" style="margin-bottom: 10vh;"> (11/11) julia, ce quer namorar comigo?</div>
+            <div id="choices"><a href="goodending.html" style="margin-right: 5px;"><button>Sim</button></a><button onclick="alerta()">Não</button></div>
+
+            <div id="content" style="margin-top: 10vh">
+                <a href="index.html"><button>Voltar à página inicial</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
