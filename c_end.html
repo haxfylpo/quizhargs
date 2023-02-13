@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D1KWFBZ0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4D1KWFBZ0H');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Hargs</title>
+    <style>
+        html {
+            color: #f1faee;
+            background-color: #4c51c6;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',  sans-serif;
+            position: inherit;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4vh;
+        }
+        h2 {
+            font-size: 2vh;
+        }
+        #conteiner {
+            display: block;
+            position: inherit;
+            background-color: #4044a7;
+            border-radius: 3vh;
+            min-height: 90vh;
+            width: 100%;
+            justify-content: center;
+        }
+        button {
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1vh;
+            width: 6vh;
+            height: 4.5vh;
+            margin-left: 4px;
+            margin-bottom: 10vh;
+            background-color: #e63946;
+            color: rgb(255, 210, 255);
+            border-radius: 6%;
+            border-style: none;
+        }
+        button:hover {
+            background-color: #c22c38;
+        }
+        #texto {
+            display: inline-block;
+            background-color: #30327e;
+            border-radius: 3vh;
+            margin-left: 19%;
+            margin-right: 19%;
+            margin-bottom: 1.7vh;
+        }
+        #question {
+            font-size: 4vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        #choices {
+            margin-top: 4vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function alerta() {
+            console.log("ela nao aceitou")
+            alert("ata.");
+        }
+    </script>
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.haxfylpo.github.io"]);
+  _paq.push(["setDomains", ["*.haxfylpo.github.io/quizhargs/end.html"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://quizhargs.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/quizhargs.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<script>
+    var yesButton = document.getElementById("yes-button");
+    var noButton = document.getElementById("no-button");
+
+    yesButton.addEventListener("click", function() {
+        _paq.push(['trackEvent', 'Pergunta', 'Clique', 'Sim']);
+    });
+
+    noButton.addEventListener("click", function() {
+        _paq.push(['trackEvent', 'Pergunta', 'Clique', 'Não']);
+    });
+</script>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="title" style="display: inline-block">
+            <h1>acertou 10 mozao!!! parabens!!!!!!</h1><img src="https://media.tenor.com/0mHUtRFCt5MAAAAC/confetti-confete.gif" style="width: 6vh; height: 6vh; margin-bottom: 10px;" alt="gif emoji comemorando">
+          <h2>já que chegou até aqui, dá uma lida aqui rapidao</h2>
+          <div id="emoji" style="margin-bottom: 2vh;">&#128071;</div>
+        </div>
+        <div id="texto">
+            <p style="margin-left: 1.7vh; margin-right: 1.7vh; font-size: 1.5vh; line-height: 3vh; margin-bottom: 12vh; text-align: justify">júlia (nargs) maria pereira argate, eu te amo MUITO. nao tenho palavras para descrever a sorte que é ter voce como amiga, companheira, namorada, esposa, a minha pessoa. com voce, meus dias sao mais claros, minhas preocupações bobas nao tem tanta força, minha autoestima aumenta, sou mais feliz. prometo cuidar de voce, te dar todo o carinho, atenção, amor e cuidado todos os dias da sua vida. o que nós temos é pra sempre. nosso futuro está traçado desde o dia que a gente se conheceu, percebi isso quando a gente se aproximou, amigamos, nos casamos, com os flertes, quando percebi que voce é o amor da minha vida, e é claro, no Dia (já faz 1 ano!!!!). agradeço por cada momento, e tenho certeza que sao só os primeiros passos do maior casal do mundo. eu prometi onze perguntas nesse quiz, até agora foram dez. olhando pra trás e vendo todo esse caminho que nós percorremos, percebi que nunca te pedi oficialmente em namoro, e assim como os pedidos de casamento que te faço, posso fazer isso quantas vezes for necessário, por que cada dia sabendo que VOCE é a minha namorada é um dia feliz. então, a última pergunta:</p>
+            <div id="question" style="font-size: 2vh"> (11/11) julia, ce quer namorar comigo?</div>
+            <div id="choices"><a href="c_goodending.html" style="margin-right: 5px;"><button id="yes-button">sim</button></a><button id="no-button" onclick="alerta()">não</button></div>
+        </div>
+    </div>
+</body>
+</html>
